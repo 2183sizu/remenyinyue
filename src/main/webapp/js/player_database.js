@@ -7,7 +7,7 @@ var myPlaylist = new jPlayerPlaylist({
     },
     [
         { title: "Ellens Gesang III D839", artist: "Geoffrey Parsons", mp3:"http://music.163.com/song/media/outer/url?id=16691428.mp3  ", poster: "http://p1.music.126.net/wAIlwR4SxuZg_ZMwgmSYcg==/3386495814257726.jpg?param=130y130"},
-        { title: "默", artist: "那英", mp3:"http://music.163.com/song/media/outer/url?id=31473269.mp3 ", poster: "http://p1.music.126.net/OCGt5ln0lPPtPbVJ3VEKtA==/109951163020570422.jpg?param=130y130"},
+        { title: "默", artist: "那英", mp3:"yinyue/red.mp3", poster: "http://p1.music.126.net/OCGt5ln0lPPtPbVJ3VEKtA==/109951163020570422.jpg?param=130y130"},
         { title: "Fire", artist: "Said The Sky", mp3:"http://music.163.com/song/media/outer/url?id=435289279.mp3", poster: "http://p1.music.126.net/tg2zke_mrqwuOPlEIEUjGg==/18294773975127592.jpg?param=130y130"}
     ],
 

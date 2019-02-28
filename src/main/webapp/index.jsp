@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/player.css"/>
     <link rel="Shortcut Icon" href="images/favicon.ico" />
+
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script>
         $(function () {
@@ -37,15 +38,15 @@
             <div class="nav_list">
                 <ul>
                     <li>
-                        <a href="" class="smallogo">
-                            <span class="mini_logo"></span>
+                        <a href="index?type=denglu" class="smallogo">
+                            <span class="mini_logo" ><img src="" title="登录"></span>
                         </a>
                     </li>
                     <li><a href="" class="home"></a></li>
 
                     <div class="sub_list" id="sub_list">
                         <p class="active">
-                            <a href="index?type=denglu">那音乐萦绕在我的脑海里.</a>
+                            <a href="">那音乐萦绕在我的脑海里.</a>
                         </p>
                     </div>
                 </ul>

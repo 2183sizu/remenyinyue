@@ -29,9 +29,19 @@ public class Index extends HttpServlet {
         MusicXinXi musicXinXi=new MusicXinXi();
         MusicXInXiDao musicXInXiDao=new MusicXinXiDaoImpl();
         List<MusicXinXi> list=musicXInXiDao.select();
+
+
+
+
+
+
+
+
         String type=request.getParameter("type");
         if(type.equals("denglu")){
             response.sendRedirect("login.jsp");
+        }else if(type.equals("")){
+
         }
 
 
