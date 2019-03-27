@@ -4,6 +4,7 @@
         var musicname=$(this).text()
          musicname=musicname.substring(2,musicname.length);
          musicname=musicname.trim()
+        alert(musicname)
          a(musicname)
     })
     /*$(document).on('click','.musicName',function () {
@@ -22,6 +23,7 @@
 
         })
         function a(data) {
+            alert(data.musicurl)
             v(data)
         }
     }
