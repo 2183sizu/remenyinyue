@@ -39,7 +39,7 @@
             <div class="nav_list">
                 <ul>
                     <li>
-                        <a href="index?type=denglu" class="smallogo">
+                        <a href="login.jsp" class="smallogo">
                             <span class="mini_logo" ><img src="" title="登录"></span>
                         </a>
                     </li>
@@ -327,7 +327,7 @@
             <ul class="rcmd_left rcmd_cont" id="latest">
                 <c:forEach items="${list}" var="gufeng">
                 <li>
-                    <a href="javascript:;" class="musicName">${gufeng.musicname}--${gufeng.singer}</a>
+                    <a href="javascript:;" class="musicName">${gufeng.musicname}</a>
                     <a class="shareIcon" href="javascript:;"></a>
                     <a class="playIcon" href="javascript:;"></a>
                 </li>
@@ -336,7 +336,7 @@
             <ul class="rcmd_center rcmd_cont" id="popular">
                 <c:forEach items="${lists}" var="huaijiu">
                     <li>
-                        <a href="javascript:;" class="musicName">${huaijiu.musicname}<%----${huaijiu.singer}--%></a>
+                        <a href="javascript:;" class="musicName">${huaijiu.musicname}</a>
                         <a class="shareIcon" href="javascript:;"></a>
                         <a class="playIcon" href="javascript:;"></a>
                     </li>
@@ -345,7 +345,7 @@
             <ul class="rcmd_right rcmd_cont" id="rank">
                 <c:forEach items="${listl}" var="liuxing">
                     <li>
-                        <a href="javascript:;" class="musicName">${liuxing.musicname}--${liuxing.singer}</a>
+                        <a href="javascript:;" class="musicName">${liuxing.musicname}</a>
                         <a class="shareIcon" href="javascript:;"></a>
                         <a class="playIcon" href="javascript:;"></a>
                     </li>
