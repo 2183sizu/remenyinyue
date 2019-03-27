@@ -2,16 +2,17 @@
 
 <!doctype html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <meta charset="utf-8">
-    <title>优卡音乐</title>
+    <title>优卡音乐11111111</title>
     <meta name="keywords" content="优卡音乐" />
     <meta name="description" content="person music" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/player.css"/>
     <link rel="Shortcut Icon" href="images/favicon.ico" />
-
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script>
         $(function () {
@@ -108,7 +109,7 @@
     </div>
     <!--轮播图 结束 -->
 
-
+<%--魔术盒--%>
     <div class="new_mv new_common">
 
         <div class="new_mv_title new_common_title index_mv_title">
@@ -304,169 +305,55 @@
             </div>
         </div>
     </div>
-
-
+<%--分类--%>
     <div class="songs_rcmd_title">
         <div class="rcmd_left_title rcmd_title">
-            <span>雅致</span>
+            <span>古风</span>
             <a href="" class="more">/更多</a>
         </div>
         <div class="rcmd_center_title rcmd_title">
-            <span>空灵</span>
+            <span>怀旧</span>
             <a href="" class="more">/更多</a>
         </div>
         <div class="rcmd_right_title rcmd_title">
-            <span>沉默</span>
+            <span>流行</span>
             <a href="" class="more">/更多</a>
         </div>
     </div>
 
     <div class="songs_rcmd" id="songs_rcmd">
         <div class="songs_rcmd_cont">
+
             <ul class="rcmd_left rcmd_cont" id="latest">
+                <c:forEach items="${list}" var="gufeng">
                 <li>
-                    <a href="" class="musicName"> Fleur de lis &#8211; Noicybino</a>
+                    <a href="javascript:;" class="musicName">${gufeng.musicname}--${gufeng.singer}</a>
                     <a class="shareIcon" href="javascript:;"></a>
                     <a class="playIcon" href="javascript:;"></a>
                 </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Dance, cherry blossoms! &#8211; Yuri akiyama</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Lost in Love &#8211; Bois LanYun</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">远すぎた空 &#8211; Akito</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Whether &#8211;  AniFace</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Constellation Of Tatyana &#8211; Yakuro</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Princess &#8211; α·Pav</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Day by Day &#8211; Shirfine</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">blue blossoms &#8211; 久遠</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
+                </c:forEach>
             </ul>
             <ul class="rcmd_center rcmd_cont" id="popular">
-                <li>
-                    <a href="javascript:;" class="musicName">無神論者のためのセレナータ &#8211; love solfege</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Proschenie &#8211; love solfege</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">神の光 -Μοιρα- &#8211; Sound Horizon</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">星女神の巫女 -Αρτεμισια- &#8211; Sound Horizon</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">石畳の緋い悪魔 &#8211; Sound Horizon</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">この狭い鳥籠の中で &#8211; Sound Horizon</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Secret Track &#8211; Sound Horizon</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">a fairy tale &#8211; MUSIRISCA</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Prayer &#8211; MUSIRISCA</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
+                <c:forEach items="${lists}" var="huaijiu">
+                    <li>
+                        <a href="javascript:;" class="musicName">${huaijiu.musicname}<%----${huaijiu.singer}--%></a>
+                        <a class="shareIcon" href="javascript:;"></a>
+                        <a class="playIcon" href="javascript:;"></a>
+                    </li>
+                </c:forEach>
             </ul>
             <ul class="rcmd_right rcmd_cont" id="rank">
-                <li>
-                    <a href="javascript:;" class="musicName">创奏&#8211; 霜月はるか</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">願い枯れゆく歌声 &#8211; Ether</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">LICHT MEER &#8211; 河合夕子</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Nocturne No. 2  &#8211; Chopin</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">夜曲 &#8211; Chopin</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">降E大调夜曲 &#8211; Chopin</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">即兴幻想曲 &#8211; Chopin</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Nocturne op. 32 &#8211; Chopin</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="musicName">Prelude in Des &#8211; Chopin</a>
-                    <a class="shareIcon" href="javascript:;"></a>
-                    <a class="playIcon" href="javascript:;"></a>
-                </li>
+                <c:forEach items="${listl}" var="liuxing">
+                    <li>
+                        <a href="javascript:;" class="musicName">${liuxing.musicname}--${liuxing.singer}</a>
+                        <a class="shareIcon" href="javascript:;"></a>
+                        <a class="playIcon" href="javascript:;"></a>
+                    </li>
+                </c:forEach>
             </ul>
         </div>
     </div>
-
+<%--幻想的世界--%>
     <div class="omnibus hot_singer">
         <div class="omnibus_cont new_common">
             <div class="omnibus_title new_common_title">
@@ -475,7 +362,7 @@
             </div>
             <ul id="omnibus_list">
                 <li class="post_big">
-                    <a href="javascript:;">
+                    <a href= "javascript:;">
                         <img src="images/ksoa.png" alt="" width="305" height="290">
                         <i></i>
                     </a>
@@ -483,7 +370,7 @@
                 </li>
                 <li class="post_small">
                     <a href="">
-                        <img src="images/Deuxième dollars.jpg" alt="" width="130" height="130">
+                        <img src="images/dollars.jpg" alt="" width="130" height="130">
                         <span></span>
                     </a>
                     <a href="javascript:;">A new world</a>

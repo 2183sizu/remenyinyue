@@ -463,7 +463,9 @@ nav.fixed {
 nav.fixed ul li, nav.fixed ul li a.smallogo, nav.fixed ul li a.home, nav.fixed ul .sub_list, nav.fixed ul .sub_list p a {
 	height: 40px;
 	line-height: 40px;
-	font-size: 16px;
+	font-size: 30px;
+	text-align: right;
+
 }
 
 nav.fixed ul li a.home {
@@ -1493,7 +1495,7 @@ nav.fixed ul .search_box .hot_search>div.open {
 	height: 24px;
 	display: inline-block;
 	margin: 9px 0 0 12px;
-	font-size: .4em;
+	font-size: 20px;
 	color: #597680;
 	line-height: 16px;
 }

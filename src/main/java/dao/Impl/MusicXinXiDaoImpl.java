@@ -46,10 +46,10 @@ public class MusicXinXiDaoImpl extends BaseDao implements MusicXInXiDao {
         conn=getConn();
         String sql="select  MusicName,Singer,MusicUrl,typename from musicxinxi a\n" +
                 "inner join musictype b  on a.typeId=b.typeId" +
-                " where MusicName like %?% ";
+                " where MusicName like ? ";
         try {
             pata=conn.prepareStatement(sql);
-            pata.setString(1,musicname);
+            pata.setString(1,'%'+musicname+'%');
             rs=pata.executeQuery();
             while(rs.next()){
                 MusicXinXi musicXinXi=new MusicXinXi();
