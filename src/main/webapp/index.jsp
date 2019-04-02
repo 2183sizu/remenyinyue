@@ -40,7 +40,7 @@
                 <ul>
                     <li>
                         <a href="login.jsp" class="smallogo">
-                            <span class="mini_logo" ><img src="" title="登录"></span>
+                            <span class="mini_logo" ><img src="" title=""></span>
                         </a>
                     </li>
                     <li><a href="" class="home"></a></li>
@@ -86,15 +86,14 @@
                         <img src="main_banner/161a3567e85b53621a1074fcb64d62bb.png" alt="">
                         <p>无意义的理想,迟早会在现实面前崩溃.</p>
                     </li>
-                    <li id="imgCard3">
-                        <a href=""><span style="opacity:0.4;"></span></a>
+                    <li id="imgCard3"><a href=""><span style="opacity:0.4;"></span></a>
                         <img src="main_banner/873b57828b3a0a67-2a532e4245c541ae-71f399aeb90edf9940ed27bd2accbccb.png" alt="">
                         <p>什么都无法舍弃的人，什么也改变不了.</p>
                     </li>
                     <li id="imgCard4">
                         <a href=""><span style="opacity:0.4;"></span></a>
                         <img src="main_banner/6c4c5d3e62274e1fa1a314aa8bede506.png" alt="">
-                        <p>再见了！只要是活着的东西，就算是神都杀给你看……无垢识 开境！死亡啊，别站在我面前!</p>
+                        <p>再见了！只要是活着的东西，就算是神都杀给你看……</p>
                     </li>
                 </ul>
                 <!--火狐倒影图层-->

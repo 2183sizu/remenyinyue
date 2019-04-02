@@ -38,15 +38,18 @@ public class Index extends HttpServlet {
             for (MusicXinXi x : list) {
                 System.out.println(x.getMusicurl());
             }
-            StringBuilder newJSON = new StringBuilder("[");
+           // StringBuilder newJSON = new StringBuilder("[");
+            StringBuilder newJSON = new StringBuilder("");
             for (MusicXinXi x : list) {
                 newJSON.append("{\"title\": \"" + x.getMusicname() + "\",\"artist\":\"" + x.getSinger() + "\",\"mp3\":\"yinyue/" + x.getMusicurl() + "\"},");
             }
             String str = newJSON.toString();
             str = str.substring(0, str.length() - 1);
+           // System.out.println(str+"]");
             PrintWriter out = response.getWriter();
 
-            out.write(str + "]");
+            //out.write(str + "]");
+            out.write(str);
             out.flush();
             out.close();
         }
@@ -65,3 +68,4 @@ public class Index extends HttpServlet {
        /* System.out.println(list.toString());*/
     }
 }
+
