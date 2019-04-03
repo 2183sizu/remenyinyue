@@ -13,6 +13,14 @@ $(function () {
             keyEnabled: true,
             audioFullScreen: true
         });
+//固定div
+    function rightBottomAd() {
+        var rbtb = $(".ad");
+        rbtb.css("top", $(document).scrollTop() + $(window).height() - rbtb.height() - 20 + "px");
+        setTimeout(rightBottomAd, 50);
+    }
+    rightBottomAd();
+
 
 // MP3播放器及歌曲库js
 

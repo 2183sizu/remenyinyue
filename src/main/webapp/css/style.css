@@ -5,6 +5,16 @@ html, body, header, nav, footer, div, ul, ol, li, p, form, input, a, span, em, i
 	list-style: none;
 	border: none;
 }
+/*
+浮动列表
+ */
+/*.ad{
+
+	position:absolute;
+	right:0;
+}*/
+
+
 
 body {
 	font-family: "微软雅黑";

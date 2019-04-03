@@ -26,7 +26,12 @@
 </head>
 <body>
 
+<div class="ad" style="z-index: 103;position: fixed;background-color: red;width:300px;height:400px">
 
+
+
+
+</div>
 
 <!--头部 开始-->
 <div id="header">
@@ -254,7 +259,7 @@
 
                             </span>
                         </a>
-                    </li>
+                    </li>1
                     <li>
                         <a href="javascript:;" class="playIcon">
                             <img width="220" height="265px" src="http://p1.music.126.net/ivONokvElv9ZCzyrZp84FQ==/3297435373557125.jpg" class="attachment-220x125 wp-post-image" alt="" />
@@ -308,7 +313,15 @@
     <div class="songs_rcmd_title">
         <div class="rcmd_left_title rcmd_title">
             <span>古风</span>
-            <a href="" class="more">/更多</a>
+            <a >
+                <c:if test="${p.currPageNo<p.totalPageCount}">
+                    <a href="index?type=selBypage&pageIndex=${p.currPageNo+1}" class="more">下一页</a>
+                </c:if>
+                <c:if test="${p.currPageNo>1}">
+                    <a href="index?type=selBypage&name='古风'" class="more"> 上一页</a>
+                </c:if>
+
+            </a>
         </div>
         <div class="rcmd_center_title rcmd_title">
             <span>怀旧</span>
@@ -324,7 +337,7 @@
         <div class="songs_rcmd_cont">
 
             <ul class="rcmd_left rcmd_cont" id="latest">
-                <c:forEach items="${list}" var="gufeng">
+                <c:forEach items="${p.musiclist}" var="gufeng">
                 <li>
                     <a href="javascript:;" class="musicName">${gufeng.musicname}</a>
                     <a class="shareIcon" href="javascript:;"></a>
@@ -525,6 +538,9 @@
 </div>
 <!-- 左侧播放器 结束-->
 
+<!-- 右侧歌曲列表 开始-->
+
+
 <!--底部 开始 -->
 <div class="footer" id="footer">
     <div class="footer_cont">
@@ -556,6 +572,7 @@
     </div>
 
 </div>
+
 <!--底部 结束 -->
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/index.js"></script>

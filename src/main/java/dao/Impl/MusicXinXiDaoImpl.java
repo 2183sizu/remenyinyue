@@ -164,4 +164,55 @@ public class MusicXinXiDaoImpl extends BaseDao implements MusicXInXiDao {
         };
         return executeUpdate(sql,objs);
     }
+    @Override
+    public int count(String name) {
+        int ts=0;
+        conn=getConn();
+        String sql="SELECT count(0) as t FROM musicxinxi as a\n" +
+                "inner join musictype as b on a.TypeId=b.TypeId\n" +
+                "where Typename=?";
+        try {
+            pata=conn.prepareStatement(sql);
+            pata.setString(1,name);
+            rs=pata.executeQuery();
+            if(rs.next()){
+                ts=rs.getInt("t");
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            close();
+        }
+        return ts;
+    }
+
+    @Override
+    public List<MusicXinXi> getMusicXinXiList(int pageNo, int pageSize,String name) {
+        List<MusicXinXi> list=new ArrayList<>();
+        conn=getConn();
+        String sql="select MusicId,MusicName,singer,musicurl,typename from musicxinxi as a\n" + "inner join musictype as b on a.TypeId=b.TypeId where typename=? limit ?,? ";
+        try {
+            pata=conn.prepareStatement(sql);
+            pata.setString(1,name);
+            pata.setInt(2,(pageNo-1)*pageSize);
+            pata.setInt(3,pageSize);
+
+            rs=pata.executeQuery();
+            while (rs.next()){
+                MusicXinXi mu=new MusicXinXi();
+                mu.setMusicid(rs.getInt("MusicId"));
+                mu.setMusicname(rs.getString("MusicName"));
+                mu.setSinger(rs.getString("singer"));
+                mu.setMusicurl(rs.getString("musicurl"));
+                mu.setTypename(rs.getString("typename"));
+            list.add(mu);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            close();
+        }
+        return list;
+    }
 }

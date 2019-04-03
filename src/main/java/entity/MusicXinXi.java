@@ -11,6 +11,15 @@ public class MusicXinXi implements Serializable {
     private String singer;
     private String musicurl;
     private int typeid;
+    private String typename;
+
+    public String getTypename() {
+        return typename;
+    }
+
+    public void setTypename(String typename) {
+        this.typename = typename;
+    }
 
     public MusicType getName() {
         return name;

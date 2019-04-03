@@ -22,5 +22,17 @@ public interface MusicXInXiDao  {
     int update(MusicXinXi musicXinXi);
     //删除歌曲
     int delete(int musicid);
+    /**
+     * 查询总条数
+     * @return
+     */
+    int count(String name);
+    /**
+     *
+     * @param pageNo 页码
+     * @param pageSize 每页显示的条数
+     * @return 集合
+     */
+    List<MusicXinXi> getMusicXinXiList(int pageNo,int pageSize,String name);
 
 }
